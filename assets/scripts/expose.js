@@ -9,7 +9,7 @@ var myVolume = slider.value;
 function init() {
   voices.addEventListener('change', somethingSelected);
   button[0].addEventListener('click', playSound);
-  slider.addEventListener('change', volumeChange);
+  slider.addEventListener('input', volumeChange);
 }
 
 function volumeChange() {
